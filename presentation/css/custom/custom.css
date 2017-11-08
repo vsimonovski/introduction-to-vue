@@ -1,0 +1,35 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700");
+.reveal {
+  font-family: "Montserrat", sans-serif !important; }
+
+img.img {
+  background: none !important;
+  border: none !important;
+  box-shadow: none !important; }
+
+.vue__logo {
+  width: 250px; }
+
+.highlight {
+  color: #e67e22; }
+
+.ar {
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Montserrat", sans-serif !important;
+  font-family: "Montserrat", sans-serif !important; }
+
+.cc__logo {
+  position: absolute;
+  bottom: 25px;
+  left: 15px; }
+
+/*# sourceMappingURL=custom.css.map */

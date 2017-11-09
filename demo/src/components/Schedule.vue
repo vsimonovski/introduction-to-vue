@@ -1,7 +1,11 @@
 <template>
   <div class="schedule">
-     <Room :roomName="'Milutin Milankovic'" :events="events.MilutinMilankovic"></Room>
-     <Room :roomName="'Laza Lazarevic'" :events="events.LazaLazarevic"></Room>
+     <Room :roomName="'Milutin Milankovic'" :events="events.MilutinMilankovic"
+     :deleteEvent="deleteEvent"
+     ></Room>
+     <Room :roomName="'Laza Lazarevic'" :events="events.LazaLazarevic"
+     :deleteEvent="deleteEvent"
+     ></Room>
   </div>
 </template>
 
@@ -11,6 +15,14 @@ import Room from '@/components/Room';
 export default {
     name: 'Schedule',
     methods: {
+        deleteEvent(eventId, roomName) {
+            const camelCaseRoomName = this.stringToCamelCase(roomName);
+
+            this.events[camelCaseRoomName] = this.events[
+                camelCaseRoomName
+            ].filter(event => event.id !== eventId);
+        },
+
         stringToCamelCase(str) {
             return str.replace(/\W+(.)/g, (match, chr) => chr.toUpperCase());
         }

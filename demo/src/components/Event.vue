@@ -8,8 +8,8 @@
 
 <script>
 export default {
-    name: 'Room',
-    props: ['data', 'roomName']
+    name: 'Event',
+    props: ['data', 'roomName', 'deleteEvent']
 };
 </script>
 

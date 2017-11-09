@@ -3,7 +3,9 @@
     <h1 class="room__title">{{roomName}}</h1>
     <ul class="room__list">
         <li class="room__item" v-for="(event, index) in events" :key="index">
-            <Event :data="event"  :roomName="roomName"></Event>
+            <Event :data="event"  :roomName="roomName"
+                :deleteEvent="deleteEvent"
+            ></Event>
         </li>
     </ul>
 </div>
@@ -14,7 +16,7 @@ import Event from '@/components/Event';
 
 export default {
     name: 'Room',
-    props: ['roomName', 'events'],
+    props: ['roomName', 'events', 'deleteEvent'],
     data() {
         return {};
     },

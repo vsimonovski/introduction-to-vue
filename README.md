@@ -30,4 +30,3 @@ npm install
 open index.html
 ```
 
-https://rawgit.com/krausest/js-framework-benchmark/master/webdriver-ts/table.html

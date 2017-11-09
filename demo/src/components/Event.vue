@@ -9,7 +9,7 @@
 <script>
 export default {
     name: 'Room',
-    props: ['data', 'deleteEvent', 'roomName']
+    props: ['data', 'roomName']
 };
 </script>
 
